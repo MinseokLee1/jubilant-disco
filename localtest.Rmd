@@ -4,26 +4,17 @@ output: html_document
 date: "2023-03-06"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+git config 방법
 
-## R Markdown
+Terminal에다가
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+git config --global user.name 어카운트_이름
+git config --global user.email 어카운트_이메일
+git add * (참고. git update 하면 깃.exe 버전이 업데이트됨)
+git commit -m 파일이름.Rmd
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+하면 되고
+그 뒤에 왼쪽 위의 푸시 버튼을 누르거나
+git push 저장소명 브랜치명
 
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+저장소 명은 git remote -v로 알 수 있음
